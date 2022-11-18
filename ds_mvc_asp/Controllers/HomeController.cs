@@ -32,7 +32,7 @@ namespace ds_mvc_asp.Controllers
             return View(usuario);
         }
 
-        public ActionResult Resultado (Usuario usuario) // criando a ação para a view Resultado
+        public ActionResult Resultado (Usuario usuario) // crian  do a ação para a view Resultado
         {
             return View(usuario);
         }

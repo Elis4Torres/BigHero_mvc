@@ -9,34 +9,24 @@ namespace ds_mvc_asp.Models
 {
     public class Usuario
     {
-        [Display (Name = "nome do Usuário")]
+        [Display (Name = "Nome de usuário")]
         [Required (ErrorMessage = "O nome é obrigatório")]
 
         public string NomeUsuario { get; set;  }
 
-        [Display(Name ="Observação")]
-        [StringLength(50, MinimumLength = 5, ErrorMessage = "Insira de 5 a 50 caracteres")]
 
-        public string Observacao { get; set; }
-
-        [Display (Name = "Idade do usuário")]
-        [Range (18 , 70, ErrorMessage = "Idade permitida entre 18 e 70")]
+        [Display (Name = "Idade")]
+        [Range (8, 70, ErrorMessage = "Obrigatório inserir idade")]
 
         public string Idade { get; set; }
 
-        [Display (Name = "Email profissional")]
+        [Display (Name = "E-mail")]
         [RegularExpression (@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "Email inválido")]
 
         public string Email { get; set; }
 
-        [Display (Name = "Crie o seu login")]
-        [RegularExpression (@"[a-zA-Z]{5,15}", ErrorMessage = "Somente letras e de 5 a 15 caracteres")]
-        [Required (ErrorMessage = "Login obrigatório")]
-        //[Remote ("LoginUnico", "usuario", ErrorMessage = "Login já cadastrado")]
 
-        public string Login { get; set; }
-
-        [Display (Name = "Crie sua senha")]
+        [Display (Name = "Senha")]
         [Required (ErrorMessage = "Senha obrigatória")]
 
         public string Senha { get; set; }
