@@ -28,3 +28,22 @@ textarea {
     background-color: #777;
     border-color: #fff
 }
+
+
+
+#titulo {
+    color: red;
+}
+
+.navbar-inverse {
+    background-color: #fff;
+}
+
+body {
+    background-image: url(./img/home.png);
+    background-size: cover;
+}
+/*#lala {
+    width: 100vw;
+    height: 720px;
+}*/
