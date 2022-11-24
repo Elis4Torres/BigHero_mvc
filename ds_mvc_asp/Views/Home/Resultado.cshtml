@@ -4,9 +4,28 @@
     ViewBag.Title = "Resultado";
 }
 
-<h2>Resultado cadastro</h2>
+<style>
+    h2 {
+    }
 
-<div>
+    dt {
+        padding: 10px;
+    }
+
+    #corpo {
+        margin-left: 100px;
+    }
+
+    p {
+        margin-left: 50px;
+    }
+</style>
+
+
+<div id="corpo">
+
+    <h2>Resultado cadastro</h2>
+
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -17,7 +36,7 @@
             @Html.DisplayFor(model => model.NomeUsuario)
         </dd>
 
-      
+
         <dt>
             @Html.DisplayNameFor(model => model.Idade)
         </dt>
@@ -51,7 +70,9 @@
         </dd>
 
     </dl>
+
+    <p>
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+
 </div>
-<p>
-    @Html.ActionLink("Voltar", "Index")
-</p>
