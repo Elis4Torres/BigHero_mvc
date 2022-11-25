@@ -5,7 +5,14 @@
 }
 
 <style>
+    body {
+        background-image: url(/Content/img/cadaastro.png);
+        background-size: cover;
+    }
     h2 {
+        margin-left: 650px;
+        font-family: Bangers;
+        color:red;
     }
 
     dt {
@@ -26,7 +33,6 @@
 
     <h2>Resultado cadastro</h2>
 
-    <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.NomeUsuario)
@@ -74,5 +80,9 @@
     <p>
         @Html.ActionLink("Voltar", "Index")
     </p>
+
+    <div id="bb">
+
+    </div>
 
 </div>

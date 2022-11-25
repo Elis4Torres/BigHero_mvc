@@ -6,8 +6,19 @@
 
 
 <style>
+    /*body {
+        overflow-y: hidden;
+    }*/
+    
+  
     #cadastro form, h2{
-        margin:20px 50px;
+
+        /*margin:20px 350px;*/
+        margin-left:400px;
+    }
+    h2 {
+        margin-left: 650px;
+        font-family:Bangers;
     }
 </style>
 
@@ -22,7 +33,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-horizontal">
-            <hr />
+  <br />
+
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <div class="form-group">
                 @Html.LabelFor(model => model.NomeUsuario, htmlAttributes: new { @class = "control-label col-md-2" })
