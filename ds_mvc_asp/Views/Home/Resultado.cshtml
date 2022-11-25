@@ -4,27 +4,39 @@
     ViewBag.Title = "Resultado";
 }
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
 <style>
     body {
-        background-image: url(/Content/img/cadaastro.png);
+        background-image: url(/Content/img/resultado.png);
         background-size: cover;
-    }
-    h2 {
-        margin-left: 650px;
-        font-family: Bangers;
-        color:red;
+        
     }
 
-    dt {
+    h2 {
+        margin-left:    50px;
+        font-family: 'Bangers';
+        color: red;
+    }
+
+    dt, dd  {
         padding: 10px;
+        color: #fff;
+    }
+    dl {
+        display: flex;
+        justify-content: start;
+        flex-direction:column;
     }
 
     #corpo {
-        margin-left: 100px;
+        margin-left: 80px;
     }
 
     p {
-        margin-left: 50px;
+        margin-left: 30px;
     }
 </style>
 
