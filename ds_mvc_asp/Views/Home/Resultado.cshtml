@@ -4,28 +4,74 @@
     ViewBag.Title = "Resultado";
 }
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
 <style>
     body {
-        background-image: url(/Content/img/cadaastro.png);
+        background-image: url(/Content/img/resultado.png);
         background-size: cover;
+        
     }
+
     h2 {
-        margin-left: 650px;
-        font-family: Bangers;
-        color:red;
-    }
-
-    dt {
-        padding: 10px;
-    }
-
-    #corpo {
-        margin-left: 100px;
-    }
-
-    p {
         margin-left: 50px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding-top: 20px;
+        font-family: 'Bangers';
+        color: #C81921;
     }
+
+    dt, dd  {
+        padding: 10px;
+        color: #000;
+        font-family: sans-serif;
+
+    }
+    @*p {
+        margin-left: 150px;
+    }*@
+    #corpo {
+        margin-left: 45px;
+        width: 325px;
+        height: 500px;
+        background: #c2c2c2;
+    }
+
+
+    /*BOTÃO VOLTAR*/
+    #voltar {
+        display: flex;
+        justify-content: center;
+        margin-left: 9%;
+    }
+
+        #voltar a {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #333;
+            background-color: #fff;
+            border-color: #ccc;
+        }
 </style>
 
 
@@ -77,9 +123,9 @@
 
     </dl>
 
-    <p>
+    <div class="col-md-offset-2 col-md-10" id="voltar">
         @Html.ActionLink("Voltar", "Index")
-    </p>
+    </div>
 
     <div id="bb">
 

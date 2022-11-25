@@ -137,6 +137,7 @@
     <Content Include="Content\img\cadastro.jpg" />
     <Content Include="Content\img\home.png" />
     <Content Include="Content\img\horizontal.jpeg" />
+    <Content Include="Content\img\resultado.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
