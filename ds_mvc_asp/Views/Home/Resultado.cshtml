@@ -30,15 +30,48 @@
         font-family: sans-serif;
 
     }
-    p {
+    @*p {
         margin-left: 150px;
-    }
+    }*@
     #corpo {
         margin-left: 45px;
         width: 325px;
         height: 500px;
         background: #c2c2c2;
     }
+
+
+    /*BOTÃO VOLTAR*/
+    #voltar {
+        display: flex;
+        justify-content: center;
+        margin-left: 9%;
+    }
+
+        #voltar a {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #333;
+            background-color: #fff;
+            border-color: #ccc;
+        }
 </style>
 
 
@@ -90,9 +123,9 @@
 
     </dl>
 
-    <p>
+    <div class="col-md-offset-2 col-md-10" id="voltar">
         @Html.ActionLink("Voltar", "Index")
-    </p>
+    </div>
 
     <div id="bb">
 
