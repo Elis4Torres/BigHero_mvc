@@ -16,7 +16,7 @@ namespace ds_mvc_asp.Models
 
 
         [Display (Name = "Idade")]
-        [Range (8, 70, ErrorMessage = "Obrigatório inserir idade")]
+        [Range (8, 70, ErrorMessage = "Obrigatório inserir idade entre 8 e 70 anos")]
 
         public string Idade { get; set; }
 
